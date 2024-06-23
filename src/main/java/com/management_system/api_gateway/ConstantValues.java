@@ -8,4 +8,8 @@ public class ConstantValues {
     public static String INGREDIENT_SERVICE = "ingredient-service";
     public static String INGREDIENT_SERVICE_PATTERN = "/ingredient/**";
     public static String INGREDIENT_SERVICE_URI = "lb://INGREDIENT-SERVICE";
+
+    public static String REDIS_SERVICE = "redis-service";
+    public static String REDIS_SERVICE_PATTERN = "/redis/**";
+    public static String REDIS_SERVICE_URI = "lb://REDIS-SERVICE";
 }

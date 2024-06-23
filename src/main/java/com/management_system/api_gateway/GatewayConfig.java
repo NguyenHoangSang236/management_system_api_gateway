@@ -29,6 +29,11 @@ public class GatewayConfig {
                                 .filters(f-> f.filters(apiGatewayFilter))
                                 .uri(ConstantValues.INGREDIENT_SERVICE_URI)
                 )
+                .route(ConstantValues.REDIS_SERVICE, r ->
+                        r.path(ConstantValues.REDIS_SERVICE_PATTERN)
+                                .filters(f-> f.filters(apiGatewayFilter))
+                                .uri(ConstantValues.REDIS_SERVICE_URI)
+                )
                 .build();
     }
 
