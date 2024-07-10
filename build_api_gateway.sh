@@ -52,5 +52,6 @@ fi
 # Xóa container cũ, build và run container mới
 docker rm -f api-gateway-container
 docker build -t api-gateway-image .
-docker run -p8080:8080 --name api-gateway-container api-gateway-image
+docker run -d -p 8080:8080 --name api-gateway-container --network root_my_network api-gateway-image
+
 EOF
