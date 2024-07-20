@@ -24,10 +24,10 @@ public class GatewayConfig {
                                 .filters(f-> f.filters(apiGatewayFilter))
                                 .uri(ConstantValues.AUTHEN_SERVICE_URI)
                 )
-                .route(ConstantValues.INGREDIENT_SERVICE, r ->
-                        r.path(ConstantValues.INGREDIENT_SERVICE_PATTERN)
+                .route(ConstantValues.RESOURCE_SERVICE, r ->
+                        r.path(ConstantValues.RESOURCE_SERVICE_PATTERN)
                                 .filters(f-> f.filters(apiGatewayFilter))
-                                .uri(ConstantValues.INGREDIENT_SERVICE_URI)
+                                .uri(ConstantValues.RESOURCE_SERVICE_URI)
                 )
                 .route(ConstantValues.REDIS_SERVICE, r ->
                         r.path(ConstantValues.REDIS_SERVICE_PATTERN)
